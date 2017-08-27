@@ -32,11 +32,32 @@ app.get('/ui/sr2.jpg',function(req,res){
 app.get('/ui/keys.jpeg',function(req,res){
 	res.sendFile(path.join(__dirname,'ui','keys.jpeg'));
 });
+app.get('/ui/logo.jpg',function(req,res){
+	res.sendFile(path.join(__dirname,'ui','logo.jpg'));
+});
+app.get('/ui/name.jpg',function(req,res){
+	res.sendFile(path.join(__dirname,'ui','name.jpg'));
+});
+app.get('/nss',function(req,res){
+	res.sendFile(path.join(__dirname,'ui','nss.html'));
+});
+app.get('/ui/nss.png',function(req,res){
+	res.sendFile(path.join(__dirname,'ui','nss.png'));
+	});
+app.get('/ui/fc.png',function(req,res){
+	res.sendFile(path.join(__dirname,'ui','fc.png'));
+});
+app.get('/ui/sc.png',function(req,res){
+	res.sendFile(path(__dirname,'ui','sc.png'));
+});
+app.get('/ui/corpus.png',function(req,res){
+	res.sendFile(path(__dirname,'ui','corpus.png'));
+});
 
 //Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
 
-var port = 80;
+var port =8080;
 app.listen(port, function () {
   console.log(`Hey Baby, your app is running on port ${port} <3<3<3`);
 });
