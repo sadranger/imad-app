@@ -56,8 +56,8 @@ app.get('/ui/corpus.png',function(req,res){
 app.get('/kukks',function(req,res){
     res.sendFile(path.join(__dirname,'ui','kukks.html'));
 });
-app.get('/ui/kukks.jpeg',function(req,res){
-    res.sendFile(path.join(__dirpath,'ui','kukks.jpeg'));
+app.get('/ui/kukka.jpeg',function(req,res){
+    res.sendFile(path.join(__dirpath,'ui','kukka.jpeg'));
     
 });
 //Do not change port, otherwise your app won't run on IMAD servers
