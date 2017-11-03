@@ -48,13 +48,13 @@ app.get('/ui/fc.png',function(req,res){
 	res.sendFile(path.join(__dirname,'ui','fc.png'));
 });
 app.get('/ui/sc.png',function(req,res){
-	res.sendFile(path(__dirname,'ui','sc.png'));
+	res.sendFile(path.join(__dirname,'ui','sc.png'));
 });
 app.get('/ui/corpus.png',function(req,res){
-	res.sendFile(path(__dirname,'ui','corpus.png'));
+	res.sendFile(path.join(__dirname,'ui','corpus.png'));
 });
 app.get('/kukks',function(req,res){
-    res.sendFile(path(__dirname,'ui','kukks.html'));
+    res.sendFile(path.join(__dirname,'ui','kukks.html'));
 });
 
 //Do not change port, otherwise your app won't run on IMAD servers
